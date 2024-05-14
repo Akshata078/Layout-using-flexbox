@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/d0fd7a6f0d.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .heading{
+            height: 3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: small;
+        }
+        header{
+            background-color: orange;
+            color: white;
+        }
+        nav{
+            background-color: rgb(228, 221, 221);
+            height: 3rem;
+        }
+        ul{
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        ul li{
+            list-style-type: none;
+            background-color: white;
+            border: 2px solid black;
+            padding: 0.3rem;
+            flex-grow: 1;
+            margin: 0.5rem;
+            text-align: center;
+            color: orange;
+        }
+        .box{
+            border: 5px solid gray;
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 1.5rem;
+        }
+        .box1 .box2{
+            height: 75%;
+        }
+        .box3{
+            height: 50%;;
+        }
+        img{
+            height: 50%;
+            width: 100%;
+            
+        }
+        .container2{
+            display: flex;
+        }
+        footer{
+            background-color: orange;
+            display: flex;
+            justify-content: center;
+            color: white;
+        }
+        button{
+            padding: 0.5rem;
+        }
+
+        @media only screen  and (min-width:700px){
+            .bars-icon{
+                display: none;
+            }
+        }
+
+        @media only screen and (max-width:700px){
+            .container2{
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+            }
+            .box{
+                margin: 1rem;
+            }
+            nav ul{
+                display: none;
+            }
+            .bars-icon{
+                display: flex;
+                justify-content: flex-end;
+                padding-top: 1rem;
+                padding-right: 1rem;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="heading">
+            <h1>Power Grid: Store or Homepage</h1>
+        </div>
+    <nav>
+        <ul>
+            <li><a href=""></a>Home</a>
+            <li><a href=""></a>About</a></li>
+            <li><a href=""></a>Blog</a></li>
+            <li><a href=""></a>Careers</a></li>
+            <li><a href=""></a>Contact Us</a></li>
+        </ul>
+        <div class="bars-icon">
+            <a href="nav-page.html">
+                <i class="fa-solid fa-bars fa-xl"></i>
+
+            </a>
+        </div>
+
+    </nav>
+</header>
+<main>
+    <div class="container2">
+        <div class="box box1">
+            <img src="./photos/capture 1.PNG" alt="">
+            <p>This is some awesome content that is on the page.</p>
+            <button>Go Somewhere</button>
+
+        </div>
+        <div class="box box2">
+            <img src="./photos/Capture 2.PNG" alt="">
+            <p>This is more content than the previousbox, but less than the next.</p>
+            <button>Click Me</button>
+
+        </div>
+        <div class="box box3">
+            <img src="./photos/Capture 3.PNG" alt="" >
+            <p>We have lots of content here to show that content can grow, and everything can be the same size if you use flexbox. Even if this has tons of text, it will line up with the other section.</p>
+            <button>Do Something</button>
+        </div>
+</main>
+<footer>
+    <p>Copyright @ 2016</p>
+</footer>
+
+</body>
+</html>
